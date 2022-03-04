@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+    body {  
+      background-color: hsl(217, 54%, 11%);
+      font-size: 18px;
+      font-family: 'Outfit', sans-serif;;
+
+    }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+      margin-top: 40px; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    .jules-name{
+      color: white;
+    }
+    .jules-name:hover{
+      color: #00fff7;
+      cursor: pointer;
+    }
+    .equilibrium {
+      font-weight: 600; 
+      color: white; 
+      margin-left: 5px; 
+      margin-top: 10px;
+    }
+    .equilibrium:hover {
+      color: #00fff7;
+      cursor: pointer;
+    }
+
+    .card-img:hover {
+      background: url(images/image-equilibrium.jpg)no-repeat center center scroll , hsla(178, 100%, 50%, 0.521) ;
+    }
+    .view-img {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+    }
+    .card-img {
+      background: url(images/image-equilibrium.jpg)no-repeat center center scroll;
+      cursor: pointer;
+    }
+    .card-img:hover {
+      cursor: pointer;
+      background: linear-gradient(0deg, rgba(0, 255, 247, 0.589), rgb(0, 255, 247, 0.589)),url(images/image-equilibrium.jpg)no-repeat center center scroll ;
+    }
+    .card-img:hover .view-img {
+      opacity: 1;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body style="padding-top: 50px;">
+
+  <form style="background-color: hsl(216, 50%, 16%); width: 300px; height: 520px; position: relative; top: 0; bottom: 0; right: 0; left: 0; margin: auto; border-radius: 20px; padding: 10px;">
+    <div class="card-img" style="position: relative; width: 100%; height: 60%; background-size: cover; overflow: hidden; border-radius: 20px;">
+      <img class="view-img" src="images/icon-view.svg">
+    </div>
+
+    <p class="equilibrium" >Equilibrium #3429</p>
+
+    <p style="color: hsl(215, 51%, 70%); margin-left: 6Px; margin-top: 10px;">Our Equilibrium collection promotes balance and calm.</p>
+  
+  <p style="margin-bottom: 50px; margin-top: 10px; margin-left: 5px; margin-right: 5Px;">
+    <a style="color: #00fff7; float: left;"><span style="margin-right: 10px; "><img src="images/icon-ethereum.svg"></span>0.041 ETH</a> 
+    <a style="float: right; color: hsl(215, 51%, 70%);"><span style="margin-right: 10px; "><img src="images/icon-clock.svg"></span>3 days left</a>
+  </p>
+    <hr style="width: 100%; color: hsl(215, 32%, 27%);">
+  <div>
+    <img src="images/image-avatar.png" width="40px" style="border: 1px white solid; border-radius: 100%; margin-top: 20px; float: left;" > 
+    <a style="color: hsl(215, 51%, 70%); margin-right: 30px; float: right; margin-top: 30px;">Creation of <span class="jules-name">Jules Wyvern</span></a>
+  </div>
+  </form>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <span style="margin-bottom: -100px;">Coded by <a href="#">snoval</a>.</span>
+  </div>
+</body>
+</html> 
